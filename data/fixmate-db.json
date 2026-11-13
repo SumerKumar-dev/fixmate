@@ -1,0 +1,1107 @@
+{
+  "categories": [
+    {
+      "id": "cat-1",
+      "slug": "electrician",
+      "name": "Electrician",
+      "description": "Circuit breakers, smart switches, wiring diagnostics, and backup inverter setup.",
+      "indicativeStartingPrice": 29,
+      "iconName": "Zap",
+      "imageUrl": "/src/assets/images/service_electrician_1794574271531.jpg",
+      "isActive": true
+    },
+    {
+      "id": "cat-2",
+      "slug": "plumber",
+      "name": "Plumber",
+      "description": "Leak detection, mixer taps, drainage clearing, and concealed pipe fittings.",
+      "indicativeStartingPrice": 25,
+      "iconName": "Droplets",
+      "imageUrl": "/src/assets/images/service_plumbing_1794574271627.jpg",
+      "isActive": true
+    },
+    {
+      "id": "cat-3",
+      "slug": "ac-repair",
+      "name": "AC Repair",
+      "description": "Split & inverter AC servicing, gas refilling, coil deep cleaning, and PCB fixes.",
+      "indicativeStartingPrice": 35,
+      "iconName": "Wind",
+      "imageUrl": "/src/assets/images/service_ac_repair_1794574271975.jpg",
+      "isActive": true
+    },
+    {
+      "id": "cat-4",
+      "slug": "carpenter",
+      "name": "Carpenter",
+      "description": "Custom cabinetry, door hinge alignment, wardrobe repair, and modular assembly.",
+      "indicativeStartingPrice": 28,
+      "iconName": "Hammer",
+      "isActive": true
+    },
+    {
+      "id": "cat-5",
+      "slug": "cleaning",
+      "name": "House Cleaning",
+      "description": "Deep kitchen & bathroom sanitization, sofa shampooing, and move-in detailing.",
+      "indicativeStartingPrice": 39,
+      "iconName": "Sparkles",
+      "isActive": true
+    },
+    {
+      "id": "cat-6",
+      "slug": "appliance-repair",
+      "name": "Appliance Repair",
+      "description": "Washing machines, refrigerators, microwaves, and RO water purifier service.",
+      "indicativeStartingPrice": 32,
+      "iconName": "Wrench",
+      "isActive": true
+    },
+    {
+      "id": "cat-7",
+      "slug": "painter",
+      "name": "Painter",
+      "description": "Interior wall repainting, damp-proof priming, texture finishes, and touch-ups.",
+      "indicativeStartingPrice": 45,
+      "iconName": "PaintRoller",
+      "isActive": true
+    },
+    {
+      "id": "cat-8",
+      "slug": "mechanic",
+      "name": "Mechanic",
+      "description": "Doorstep car & two-wheeler diagnostics, battery jump-start, and periodic checks.",
+      "indicativeStartingPrice": 34,
+      "iconName": "Car",
+      "isActive": true
+    }
+  ],
+  "users": [
+    {
+      "id": "user-cust-1",
+      "email": "aarav.mehta@example.com",
+      "password": "password123",
+      "fullName": "Aarav Mehta",
+      "phone": "+91 98450 22190",
+      "role": "customer",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "Indiranagar",
+      "address": "42, 12th Main Road, HAL 2nd Stage, Indiranagar",
+      "createdAt": "2026-08-14T10:30:00Z"
+    },
+    {
+      "id": "user-pro-1",
+      "email": "vikram.nair@example.com",
+      "password": "password123",
+      "fullName": "Vikram Nair",
+      "phone": "+91 99001 44120",
+      "role": "professional",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "Indiranagar",
+      "address": "100 Feet Road, Indiranagar",
+      "avatarUrl": "/src/assets/images/pro_portrait_lead_1794574271886.jpg",
+      "createdAt": "2026-06-05T09:00:00Z"
+    },
+    {
+      "id": "user-pro-2",
+      "email": "elena.rodrigues@example.com",
+      "password": "password123",
+      "fullName": "Elena Rodrigues",
+      "phone": "+91 98802 19834",
+      "role": "professional",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "Koramangala",
+      "address": "4th Block, Koramangala",
+      "avatarUrl": "/src/assets/images/service_plumbing_1794574271627.jpg",
+      "createdAt": "2026-07-11T09:00:00Z"
+    },
+    {
+      "id": "user-pro-3",
+      "email": "rohan.desai@example.com",
+      "password": "password123",
+      "fullName": "Rohan Desai",
+      "phone": "+91 97411 66310",
+      "role": "professional",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "HSR Layout",
+      "address": "Sector 2, HSR Layout",
+      "avatarUrl": "/src/assets/images/service_ac_repair_1794574271975.jpg",
+      "createdAt": "2026-07-22T09:00:00Z"
+    },
+    {
+      "id": "user-pro-4",
+      "email": "sarah.kulkarni@example.com",
+      "password": "password123",
+      "fullName": "Sarah Kulkarni",
+      "phone": "+91 96112 77890",
+      "role": "professional",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "Whitefield",
+      "address": "ITPL Main Road, Whitefield",
+      "avatarUrl": "/src/assets/images/service_electrician_1794574271531.jpg",
+      "createdAt": "2026-08-01T09:00:00Z"
+    },
+    {
+      "id": "user-pro-5",
+      "email": "karthik.rao@example.com",
+      "password": "password123",
+      "fullName": "Karthik Rao",
+      "phone": "+91 98204 51092",
+      "role": "professional",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "Jayanagar",
+      "address": "4th T Block, Jayanagar",
+      "createdAt": "2026-09-12T09:00:00Z"
+    },
+    {
+      "id": "user-pro-6",
+      "email": "priya.sharma@example.com",
+      "password": "password123",
+      "fullName": "Priya Sharma",
+      "phone": "+91 98192 33041",
+      "role": "professional",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "Indiranagar",
+      "address": "CMH Road, Indiranagar",
+      "createdAt": "2026-09-25T09:00:00Z"
+    },
+    {
+      "id": "user-pro-7",
+      "email": "dev.malhotra@example.com",
+      "password": "password123",
+      "fullName": "Dev Malhotra",
+      "phone": "+91 99164 88210",
+      "role": "professional",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "Koramangala",
+      "address": "6th Block, Koramangala",
+      "createdAt": "2026-10-03T09:00:00Z"
+    },
+    {
+      "id": "user-pro-8",
+      "email": "imran.khan@example.com",
+      "password": "password123",
+      "fullName": "Imran Khan",
+      "phone": "+91 97390 11234",
+      "role": "professional",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "HSR Layout",
+      "address": "27th Main, HSR Layout",
+      "createdAt": "2026-10-18T09:00:00Z"
+    },
+    {
+      "id": "user-admin-1",
+      "email": "admin@fixmate.demo",
+      "password": "password123",
+      "fullName": "Nadia Kapoor",
+      "phone": "+91 80 4120 8800",
+      "role": "admin",
+      "accountStatus": "active",
+      "city": "Bengaluru",
+      "locality": "Indiranagar",
+      "address": "FixMate Operations Hub, Bengaluru",
+      "createdAt": "2026-01-10T08:00:00Z"
+    }
+  ],
+  "professionals": [
+    {
+      "id": "pro-1",
+      "userId": "user-pro-1",
+      "fullName": "Vikram Nair",
+      "email": "vikram.nair@example.com",
+      "phone": "+91 99001 44120",
+      "avatarUrl": "/src/assets/images/pro_portrait_lead_1794574271886.jpg",
+      "categorySlug": "electrician",
+      "categoryName": "Electrician",
+      "headline": "Master Residential Electrician & Smart Panel Specialist",
+      "bio": "Over 11 years handling residential wiring, three-phase load balancing, MCB upgrades, and smart home dimmer installations with zero messy cabling.",
+      "experienceYears": 11,
+      "city": "Bengaluru",
+      "localities": [
+        "Indiranagar",
+        "Koramangala",
+        "Domlur",
+        "Ulsoor"
+      ],
+      "distanceKm": 1.4,
+      "skills": [
+        "MCB & Distribution Boards",
+        "Smart Switches",
+        "Inverter & UPS Wiring",
+        "Fault Diagnostics"
+      ],
+      "workingHours": "07:30 AM - 08:30 PM",
+      "isAvailable": true,
+      "emergencyAvailable": true,
+      "startingPrice": 29,
+      "verificationStatus": "verified",
+      "ratingAvg": 4.9,
+      "reviewCount": 2,
+      "completedJobsCount": 148,
+      "portfolioUrls": [
+        "/src/assets/images/service_electrician_1794574271531.jpg",
+        "/src/assets/images/hero_home_technician_1794574272164.jpg"
+      ],
+      "services": [
+        {
+          "id": "srv-101",
+          "professionalId": "pro-1",
+          "title": "MCB & Short-Circuit Diagnostic",
+          "description": "Thermal & multimeter inspection of distribution board and faulty branch circuits.",
+          "price": 29,
+          "durationMinutes": 60
+        },
+        {
+          "id": "srv-102",
+          "professionalId": "pro-1",
+          "title": "Smart Switchboard Installation (Up to 6 Modules)",
+          "description": "Clean retrofit wiring with neutral calibration and load testing.",
+          "price": 55,
+          "durationMinutes": 90
+        },
+        {
+          "id": "srv-103",
+          "professionalId": "pro-1",
+          "title": "Home Inverter & Battery Setup",
+          "description": "Dedicated backup line wiring and surge protection testing.",
+          "price": 75,
+          "durationMinutes": 120
+        }
+      ],
+      "demoMonthlyEarnings": [
+        {
+          "month": "Jun",
+          "amount": 1420
+        },
+        {
+          "month": "Jul",
+          "amount": 1680
+        },
+        {
+          "month": "Aug",
+          "amount": 1590
+        },
+        {
+          "month": "Sep",
+          "amount": 1840
+        },
+        {
+          "month": "Oct",
+          "amount": 2110
+        },
+        {
+          "month": "Nov",
+          "amount": 1920
+        }
+      ]
+    },
+    {
+      "id": "pro-2",
+      "userId": "user-pro-2",
+      "fullName": "Elena Rodrigues",
+      "email": "elena.rodrigues@example.com",
+      "phone": "+91 98802 19834",
+      "avatarUrl": "/src/assets/images/service_plumbing_1794574271627.jpg",
+      "categorySlug": "plumber",
+      "categoryName": "Plumber",
+      "headline": "Precision Plumbing, Concealed Leak & Fixture Specialist",
+      "bio": "Licensed plumbing technician focused on non-destructive leak detection, brass/copper sanitary fittings, and bathroom pressure balancing.",
+      "experienceYears": 8,
+      "city": "Bengaluru",
+      "localities": [
+        "Koramangala",
+        "HSR Layout",
+        "Indiranagar",
+        "BTM Layout"
+      ],
+      "distanceKm": 2.1,
+      "skills": [
+        "Concealed Leak Detection",
+        "Mixer & Diverter Valves",
+        "Pressure Pump Setup",
+        "Drain Unclogging"
+      ],
+      "workingHours": "08:00 AM - 07:30 PM",
+      "isAvailable": true,
+      "emergencyAvailable": true,
+      "startingPrice": 25,
+      "verificationStatus": "verified",
+      "ratingAvg": 4.8,
+      "reviewCount": 1,
+      "completedJobsCount": 112,
+      "portfolioUrls": [
+        "/src/assets/images/service_plumbing_1794574271627.jpg"
+      ],
+      "services": [
+        {
+          "id": "srv-201",
+          "professionalId": "pro-2",
+          "title": "Tap, Mixer & Valve Replacement",
+          "description": "Leak-proof cartridge or complete faucet replacement with PTFE sealing.",
+          "price": 25,
+          "durationMinutes": 45
+        },
+        {
+          "id": "srv-202",
+          "professionalId": "pro-2",
+          "title": "Pressurized Pipe Leak Inspection",
+          "description": "Pinpoint moisture tracing and joint sealing without unnecessary tile breaking.",
+          "price": 49,
+          "durationMinutes": 90
+        }
+      ],
+      "demoMonthlyEarnings": [
+        {
+          "month": "Jun",
+          "amount": 1150
+        },
+        {
+          "month": "Jul",
+          "amount": 1320
+        },
+        {
+          "month": "Aug",
+          "amount": 1490
+        },
+        {
+          "month": "Sep",
+          "amount": 1410
+        },
+        {
+          "month": "Oct",
+          "amount": 1750
+        },
+        {
+          "month": "Nov",
+          "amount": 1620
+        }
+      ]
+    },
+    {
+      "id": "pro-3",
+      "userId": "user-pro-3",
+      "fullName": "Rohan Desai",
+      "email": "rohan.desai@example.com",
+      "phone": "+91 97411 66310",
+      "avatarUrl": "/src/assets/images/service_ac_repair_1794574271975.jpg",
+      "categorySlug": "ac-repair",
+      "categoryName": "AC Repair",
+      "headline": "Inverter Split AC & HVAC Diagnostic Engineer",
+      "bio": "Certified refrigeration specialist for split, cassette, and inverter AC systems. Digital manifold gauge checks, foam-jet coil cleaning, and PCB repair.",
+      "experienceYears": 9,
+      "city": "Bengaluru",
+      "localities": [
+        "HSR Layout",
+        "Koramangala",
+        "Bellandur",
+        "Sarjapur"
+      ],
+      "distanceKm": 3.4,
+      "skills": [
+        "Foam-Jet Deep Cleaning",
+        "R32 / R410A Gas Top-Up",
+        "Inverter PCB Diagnostics",
+        "Drain Line Flushing"
+      ],
+      "workingHours": "09:00 AM - 08:00 PM",
+      "isAvailable": true,
+      "emergencyAvailable": false,
+      "startingPrice": 35,
+      "verificationStatus": "verified",
+      "ratingAvg": 4.9,
+      "reviewCount": 1,
+      "completedJobsCount": 134,
+      "portfolioUrls": [
+        "/src/assets/images/service_ac_repair_1794574271975.jpg",
+        "/src/assets/images/hero_home_technician_1794574272164.jpg"
+      ],
+      "services": [
+        {
+          "id": "srv-301",
+          "professionalId": "pro-3",
+          "title": "Foam-Jet Split AC Deep Service",
+          "description": "Indoor evaporator & outdoor condenser high-pressure cleaning with drain flush.",
+          "price": 35,
+          "durationMinutes": 75
+        },
+        {
+          "id": "srv-302",
+          "professionalId": "pro-3",
+          "title": "Refrigerant Pressure Check & Top-Up",
+          "description": "Nitrogen leak check plus calibrated refrigerant charging.",
+          "price": 68,
+          "durationMinutes": 90
+        }
+      ],
+      "demoMonthlyEarnings": [
+        {
+          "month": "Jun",
+          "amount": 1800
+        },
+        {
+          "month": "Jul",
+          "amount": 1620
+        },
+        {
+          "month": "Aug",
+          "amount": 1550
+        },
+        {
+          "month": "Sep",
+          "amount": 1790
+        },
+        {
+          "month": "Oct",
+          "amount": 1940
+        },
+        {
+          "month": "Nov",
+          "amount": 1710
+        }
+      ]
+    },
+    {
+      "id": "pro-4",
+      "userId": "user-pro-4",
+      "fullName": "Sarah Kulkarni",
+      "email": "sarah.kulkarni@example.com",
+      "phone": "+91 96112 77890",
+      "avatarUrl": "/src/assets/images/service_electrician_1794574271531.jpg",
+      "categorySlug": "electrician",
+      "categoryName": "Electrician",
+      "headline": "Commercial & Home Electrical Safety Auditor",
+      "bio": "Specialist in earthing resistance testing, EV home charger installation, and appliance surge protection.",
+      "experienceYears": 7,
+      "city": "Bengaluru",
+      "localities": [
+        "Whitefield",
+        "Marathahalli",
+        "Brookefield",
+        "Indiranagar"
+      ],
+      "distanceKm": 4.8,
+      "skills": [
+        "EV Charger Wiring",
+        "Earthing & Surge Testing",
+        "Chandelier & Recessed Lights"
+      ],
+      "workingHours": "08:30 AM - 07:00 PM",
+      "isAvailable": true,
+      "emergencyAvailable": true,
+      "startingPrice": 32,
+      "verificationStatus": "verified",
+      "ratingAvg": 4.7,
+      "reviewCount": 1,
+      "completedJobsCount": 89,
+      "portfolioUrls": [
+        "/src/assets/images/service_electrician_1794574271531.jpg"
+      ],
+      "services": [
+        {
+          "id": "srv-401",
+          "professionalId": "pro-4",
+          "title": "Home Electrical Safety & Earthing Audit",
+          "description": "Socket polarity, RCCB trip-time, and earthing voltage diagnostic.",
+          "price": 32,
+          "durationMinutes": 60
+        },
+        {
+          "id": "srv-402",
+          "professionalId": "pro-4",
+          "title": "EV Wallbox Dedicated Line Setup",
+          "description": "Armored cabling and dedicated RCBO installation for 3.3kW–7.4kW chargers.",
+          "price": 110,
+          "durationMinutes": 180
+        }
+      ],
+      "demoMonthlyEarnings": [
+        {
+          "month": "Jun",
+          "amount": 1200
+        },
+        {
+          "month": "Jul",
+          "amount": 1380
+        },
+        {
+          "month": "Aug",
+          "amount": 1510
+        },
+        {
+          "month": "Sep",
+          "amount": 1620
+        },
+        {
+          "month": "Oct",
+          "amount": 1890
+        },
+        {
+          "month": "Nov",
+          "amount": 1760
+        }
+      ]
+    },
+    {
+      "id": "pro-5",
+      "userId": "user-pro-5",
+      "fullName": "Karthik Rao",
+      "email": "karthik.rao@example.com",
+      "phone": "+91 98204 51092",
+      "categorySlug": "carpenter",
+      "categoryName": "Carpenter",
+      "headline": "Modular Woodwork & Door Hardware Craftsman",
+      "bio": "Fine finish carpentry for soft-close hinges, sliding wardrobe tracks, custom shelving, and teak door alignment.",
+      "experienceYears": 12,
+      "city": "Bengaluru",
+      "localities": [
+        "Jayanagar",
+        "JP Nagar",
+        "Basavanagudi",
+        "Koramangala"
+      ],
+      "distanceKm": 5.2,
+      "skills": [
+        "Soft-Close Hinges",
+        "Sliding Wardrobe Tracks",
+        "Lock & Handle Fitting",
+        "Custom Shelving"
+      ],
+      "workingHours": "09:00 AM - 06:30 PM",
+      "isAvailable": true,
+      "emergencyAvailable": false,
+      "startingPrice": 28,
+      "verificationStatus": "pending",
+      "ratingAvg": 4.6,
+      "reviewCount": 0,
+      "completedJobsCount": 41,
+      "portfolioUrls": [],
+      "services": [
+        {
+          "id": "srv-501",
+          "professionalId": "pro-5",
+          "title": "Cabinet Hinge & Channel Alignment",
+          "description": "Precision adjustment or replacement of kitchen & wardrobe hardware.",
+          "price": 28,
+          "durationMinutes": 60
+        },
+        {
+          "id": "srv-502",
+          "professionalId": "pro-5",
+          "title": "Smart Door Lock Mortise Cut & Fit",
+          "description": "Clean routing and alignment for digital deadbolts.",
+          "price": 60,
+          "durationMinutes": 120
+        }
+      ],
+      "demoMonthlyEarnings": [
+        {
+          "month": "Jun",
+          "amount": 880
+        },
+        {
+          "month": "Jul",
+          "amount": 940
+        },
+        {
+          "month": "Aug",
+          "amount": 1090
+        },
+        {
+          "month": "Sep",
+          "amount": 1120
+        },
+        {
+          "month": "Oct",
+          "amount": 1290
+        },
+        {
+          "month": "Nov",
+          "amount": 1180
+        }
+      ]
+    },
+    {
+      "id": "pro-6",
+      "userId": "user-pro-6",
+      "fullName": "Priya Sharma",
+      "email": "priya.sharma@example.com",
+      "phone": "+91 98192 33041",
+      "categorySlug": "cleaning",
+      "categoryName": "House Cleaning",
+      "headline": "Eco-Safe Deep Home & Kitchen Detailing Specialist",
+      "bio": "Trained residential hygiene lead using plant-derived degreasers, steam sanitization, and HEPA upholstery extraction.",
+      "experienceYears": 6,
+      "city": "Bengaluru",
+      "localities": [
+        "Indiranagar",
+        "Ulsoor",
+        "MG Road",
+        "Koramangala"
+      ],
+      "distanceKm": 1.9,
+      "skills": [
+        "Steam Bathroom Descaling",
+        "Chimney & Kitchen Degreasing",
+        "Upholstery Extraction"
+      ],
+      "workingHours": "08:00 AM - 06:00 PM",
+      "isAvailable": true,
+      "emergencyAvailable": false,
+      "startingPrice": 39,
+      "verificationStatus": "verified",
+      "ratingAvg": 4.8,
+      "reviewCount": 1,
+      "completedJobsCount": 95,
+      "portfolioUrls": [],
+      "services": [
+        {
+          "id": "srv-601",
+          "professionalId": "pro-6",
+          "title": "Kitchen & Chimney Deep Degreasing",
+          "description": "Complete tile, hob, cabinet exterior, and filter degreasing.",
+          "price": 45,
+          "durationMinutes": 120
+        },
+        {
+          "id": "srv-602",
+          "professionalId": "pro-6",
+          "title": "2-Bathroom Steam Descaling",
+          "description": "Hard-water stain removal, grout scrubbing, and glass polishing.",
+          "price": 39,
+          "durationMinutes": 90
+        }
+      ],
+      "demoMonthlyEarnings": [
+        {
+          "month": "Jun",
+          "amount": 1100
+        },
+        {
+          "month": "Jul",
+          "amount": 1210
+        },
+        {
+          "month": "Aug",
+          "amount": 1340
+        },
+        {
+          "month": "Sep",
+          "amount": 1450
+        },
+        {
+          "month": "Oct",
+          "amount": 1610
+        },
+        {
+          "month": "Nov",
+          "amount": 1540
+        }
+      ]
+    },
+    {
+      "id": "pro-7",
+      "userId": "user-pro-7",
+      "fullName": "Dev Malhotra",
+      "email": "dev.malhotra@example.com",
+      "phone": "+91 99164 88210",
+      "categorySlug": "appliance-repair",
+      "categoryName": "Appliance Repair",
+      "headline": "Front-Load Washer & Inverter Fridge Technician",
+      "bio": "Component-level troubleshooting for Bosch, LG, Samsung, and IFB washers, refrigerators, and built-in ovens.",
+      "experienceYears": 10,
+      "city": "Bengaluru",
+      "localities": [
+        "Koramangala",
+        "HSR Layout",
+        "Indiranagar",
+        "Jayanagar"
+      ],
+      "distanceKm": 2.8,
+      "skills": [
+        "Drum Bearing & Drain Pump",
+        "Inverter Compressor Relay",
+        "Microwave Magnetron"
+      ],
+      "workingHours": "09:00 AM - 08:00 PM",
+      "isAvailable": false,
+      "emergencyAvailable": false,
+      "startingPrice": 32,
+      "verificationStatus": "verified",
+      "ratingAvg": 4.7,
+      "reviewCount": 0,
+      "completedJobsCount": 77,
+      "portfolioUrls": [],
+      "services": [
+        {
+          "id": "srv-701",
+          "professionalId": "pro-7",
+          "title": "Washing Machine Diagnostic & Pump Service",
+          "description": "Error code scan, drain filter clearing, and inlet valve check.",
+          "price": 32,
+          "durationMinutes": 60
+        },
+        {
+          "id": "srv-702",
+          "professionalId": "pro-7",
+          "title": "Refrigerator Cooling & Thermostat Service",
+          "description": "Defrost sensor, fan motor, and relay inspection.",
+          "price": 36,
+          "durationMinutes": 60
+        }
+      ],
+      "demoMonthlyEarnings": [
+        {
+          "month": "Jun",
+          "amount": 1310
+        },
+        {
+          "month": "Jul",
+          "amount": 1290
+        },
+        {
+          "month": "Aug",
+          "amount": 1400
+        },
+        {
+          "month": "Sep",
+          "amount": 1520
+        },
+        {
+          "month": "Oct",
+          "amount": 1480
+        },
+        {
+          "month": "Nov",
+          "amount": 1390
+        }
+      ]
+    },
+    {
+      "id": "pro-8",
+      "userId": "user-pro-8",
+      "fullName": "Imran Khan",
+      "email": "imran.khan@example.com",
+      "phone": "+91 97390 11234",
+      "categorySlug": "mechanic",
+      "categoryName": "Mechanic",
+      "headline": "Mobile OBD-II Car & Scooter Diagnostics",
+      "bio": "Doorstep vehicle inspection, battery replacement, starter relay diagnostics, and brake pad checks at your apartment parking.",
+      "experienceYears": 5,
+      "city": "Bengaluru",
+      "localities": [
+        "HSR Layout",
+        "BTM Layout",
+        "Koramangala"
+      ],
+      "distanceKm": 3.9,
+      "skills": [
+        "OBD-II Fault Scanning",
+        "Battery Jump & Health Test",
+        "Periodic Oil & Filter Check"
+      ],
+      "workingHours": "07:00 AM - 09:00 PM",
+      "isAvailable": true,
+      "emergencyAvailable": true,
+      "startingPrice": 34,
+      "verificationStatus": "unverified",
+      "ratingAvg": 4.5,
+      "reviewCount": 0,
+      "completedJobsCount": 19,
+      "portfolioUrls": [],
+      "services": [
+        {
+          "id": "srv-801",
+          "professionalId": "pro-8",
+          "title": "Emergency Battery Jump & Alternator Test",
+          "description": "Doorstep cranking amps check and safe jump-start.",
+          "price": 34,
+          "durationMinutes": 45
+        },
+        {
+          "id": "srv-802",
+          "professionalId": "pro-8",
+          "title": "OBD-II Full Vehicle Diagnostic Scan",
+          "description": "Engine fault code readout and sensor health report.",
+          "price": 42,
+          "durationMinutes": 60
+        }
+      ],
+      "demoMonthlyEarnings": [
+        {
+          "month": "Jun",
+          "amount": 620
+        },
+        {
+          "month": "Jul",
+          "amount": 740
+        },
+        {
+          "month": "Aug",
+          "amount": 810
+        },
+        {
+          "month": "Sep",
+          "amount": 890
+        },
+        {
+          "month": "Oct",
+          "amount": 960
+        },
+        {
+          "month": "Nov",
+          "amount": 1020
+        }
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bkg-1",
+      "bookingCode": "FM-849201",
+      "customerId": "user-cust-1",
+      "customerName": "Aarav Mehta",
+      "customerPhone": "+91 98450 22190",
+      "professionalId": "pro-1",
+      "professionalName": "Vikram Nair",
+      "categoryName": "Electrician",
+      "serviceId": "srv-101",
+      "serviceTitle": "MCB & Short-Circuit Diagnostic",
+      "problemDescription": "Kitchen circuit breaker keeps tripping whenever the induction cooktop and microwave run together.",
+      "scheduledDate": "2026-10-28",
+      "timeSlot": "10:00 AM - 11:30 AM",
+      "serviceAddress": "42, 12th Main Road, HAL 2nd Stage, Indiranagar",
+      "locality": "Indiranagar",
+      "estimatedTotal": 29,
+      "status": "Completed",
+      "paymentMethod": "Simulated UPI",
+      "paymentStatus": "Simulated Paid",
+      "createdAt": "2026-10-26T11:20:00Z",
+      "updatedAt": "2026-10-28T11:15:00Z"
+    },
+    {
+      "id": "bkg-2",
+      "bookingCode": "FM-849318",
+      "customerId": "user-cust-1",
+      "customerName": "Aarav Mehta",
+      "customerPhone": "+91 98450 22190",
+      "professionalId": "pro-2",
+      "professionalName": "Elena Rodrigues",
+      "categoryName": "Plumber",
+      "serviceId": "srv-201",
+      "serviceTitle": "Tap, Mixer & Valve Replacement",
+      "problemDescription": "Master bathroom sink cold-water angle valve has a slow drip at the thread.",
+      "scheduledDate": "2026-11-04",
+      "timeSlot": "02:00 PM - 03:30 PM",
+      "serviceAddress": "42, 12th Main Road, HAL 2nd Stage, Indiranagar",
+      "locality": "Indiranagar",
+      "estimatedTotal": 25,
+      "status": "Completed",
+      "paymentMethod": "Simulated Card",
+      "paymentStatus": "Simulated Paid",
+      "createdAt": "2026-11-02T09:10:00Z",
+      "updatedAt": "2026-11-04T15:00:00Z"
+    },
+    {
+      "id": "bkg-3",
+      "bookingCode": "FM-850104",
+      "customerId": "user-cust-1",
+      "customerName": "Aarav Mehta",
+      "customerPhone": "+91 98450 22190",
+      "professionalId": "pro-3",
+      "professionalName": "Rohan Desai",
+      "categoryName": "AC Repair",
+      "serviceId": "srv-301",
+      "serviceTitle": "Foam-Jet Split AC Deep Service",
+      "problemDescription": "Living room 1.5-ton split AC has reduced airflow and mild water condensation near louvers.",
+      "scheduledDate": "2026-11-16",
+      "timeSlot": "10:00 AM - 11:30 AM",
+      "serviceAddress": "42, 12th Main Road, HAL 2nd Stage, Indiranagar",
+      "locality": "Indiranagar",
+      "estimatedTotal": 35,
+      "status": "Accepted",
+      "paymentMethod": "Simulated UPI",
+      "paymentStatus": "Simulated Paid",
+      "createdAt": "2026-11-12T16:45:00Z",
+      "updatedAt": "2026-11-12T17:10:00Z"
+    },
+    {
+      "id": "bkg-4",
+      "bookingCode": "FM-850219",
+      "customerId": "user-cust-1",
+      "customerName": "Aarav Mehta",
+      "customerPhone": "+91 98450 22190",
+      "professionalId": "pro-1",
+      "professionalName": "Vikram Nair",
+      "categoryName": "Electrician",
+      "serviceId": "srv-102",
+      "serviceTitle": "Smart Switchboard Installation (Up to 6 Modules)",
+      "problemDescription": "Install Wi-Fi dimmer switchboard in study room and verify neutral wire continuity.",
+      "scheduledDate": "2026-11-18",
+      "timeSlot": "04:00 PM - 05:30 PM",
+      "serviceAddress": "42, 12th Main Road, HAL 2nd Stage, Indiranagar",
+      "locality": "Indiranagar",
+      "estimatedTotal": 55,
+      "status": "Pending",
+      "paymentMethod": "Simulated Card",
+      "paymentStatus": "Simulated Paid",
+      "createdAt": "2026-11-13T04:10:00Z",
+      "updatedAt": "2026-11-13T04:10:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "bookingId": "bkg-1",
+      "customerId": "user-cust-1",
+      "customerName": "Aarav Mehta",
+      "professionalId": "pro-1",
+      "professionalName": "Vikram Nair",
+      "rating": 5,
+      "comment": "Vikram traced the loose neutral busbar inside the kitchen sub-panel within 20 minutes and replaced the 20A RCBO cleanly.",
+      "isHidden": false,
+      "createdAt": "2026-10-28T13:00:00Z"
+    },
+    {
+      "id": "rev-2",
+      "bookingId": "bkg-2",
+      "customerId": "user-cust-1",
+      "customerName": "Aarav Mehta",
+      "professionalId": "pro-2",
+      "professionalName": "Elena Rodrigues",
+      "rating": 5,
+      "comment": "Zero mess, brought spare brass valves, and pressure-tested the line before wrapping up. Transparent pricing.",
+      "isHidden": false,
+      "createdAt": "2026-11-04T16:15:00Z"
+    },
+    {
+      "id": "rev-3",
+      "bookingId": "bkg-demo-3",
+      "customerId": "user-cust-1",
+      "customerName": "Meera Iyer (Sample)",
+      "professionalId": "pro-3",
+      "professionalName": "Rohan Desai",
+      "rating": 5,
+      "comment": "Used a waterproof wash jacket so the wall stayed spotless. Cooling temperature dropped by 4 degrees immediately.",
+      "isHidden": false,
+      "createdAt": "2026-10-19T12:00:00Z"
+    },
+    {
+      "id": "rev-4",
+      "bookingId": "bkg-demo-4",
+      "customerId": "user-cust-1",
+      "customerName": "Siddharth Verma (Sample)",
+      "professionalId": "pro-4",
+      "professionalName": "Sarah Kulkarni",
+      "rating": 5,
+      "comment": "Detailed earthing resistance report and neatly labeled every circuit in our distribution box.",
+      "isHidden": false,
+      "createdAt": "2026-10-15T17:30:00Z"
+    },
+    {
+      "id": "rev-5",
+      "bookingId": "bkg-demo-5",
+      "customerId": "user-cust-1",
+      "customerName": "Ananya Sen (Sample)",
+      "professionalId": "pro-6",
+      "professionalName": "Priya Sharma",
+      "rating": 5,
+      "comment": "Removed years of grease around the chimney hood without harsh chemical fumes.",
+      "isHidden": false,
+      "createdAt": "2026-10-11T15:40:00Z"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "fav-1",
+      "customerId": "user-cust-1",
+      "professionalId": "pro-1"
+    },
+    {
+      "id": "fav-2",
+      "customerId": "user-cust-1",
+      "professionalId": "pro-2"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "user-cust-1",
+      "title": "Booking Accepted",
+      "message": "Rohan Desai accepted your AC Repair booking (FM-850104) for Nov 16 at 10:00 AM.",
+      "isRead": false,
+      "createdAt": "2026-11-12T17:10:00Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "user-cust-1",
+      "title": "Review Eligible",
+      "message": "Your plumbing service (FM-849318) is completed. Share feedback to help neighbors.",
+      "isRead": true,
+      "createdAt": "2026-11-04T15:05:00Z"
+    },
+    {
+      "id": "notif-3",
+      "userId": "user-pro-1",
+      "title": "New Booking Request",
+      "message": "Aarav Mehta requested Smart Switchboard Installation (FM-850219) on Nov 18.",
+      "isRead": false,
+      "createdAt": "2026-11-13T04:10:00Z"
+    }
+  ],
+  "verificationRequests": [
+    {
+      "id": "ver-1",
+      "professionalId": "pro-5",
+      "professionalName": "Karthik Rao",
+      "categoryName": "Carpenter",
+      "documentType": "Trade Skill Certificate & Govt ID",
+      "licenseNumber": "KA-SKL-2026-9941",
+      "notes": "12 years carpentry workshop proof + Aadhaar verification submitted.",
+      "status": "pending",
+      "createdAt": "2026-11-10T09:30:00Z"
+    },
+    {
+      "id": "ver-2",
+      "professionalId": "pro-8",
+      "professionalName": "Imran Khan",
+      "categoryName": "Mechanic",
+      "documentType": "Automotive Diagnostic Certification",
+      "licenseNumber": "BLR-AUTO-5518",
+      "notes": "Pending field equipment & ID review.",
+      "status": "pending",
+      "createdAt": "2026-11-12T14:20:00Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "actor": "Aarav Mehta",
+      "action": "Created booking FM-850219",
+      "target": "Vikram Nair (Electrician)",
+      "createdAt": "2026-11-13T04:10:00Z"
+    },
+    {
+      "id": "act-2",
+      "actor": "Rohan Desai",
+      "action": "Accepted booking FM-850104",
+      "target": "Foam-Jet Split AC Deep Service",
+      "createdAt": "2026-11-12T17:10:00Z"
+    },
+    {
+      "id": "act-3",
+      "actor": "Imran Khan",
+      "action": "Submitted verification documents",
+      "target": "BLR-AUTO-5518",
+      "createdAt": "2026-11-12T14:20:00Z"
+    }
+  ]
+}

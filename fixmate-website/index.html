@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FixMate – Your Local Service, One Click Away</title>
+    <meta
+      name="description"
+      content="Find skilled and verified local professionals for every home repair and maintenance need. Fast, simple, and reliable."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sticky Top Navigation Bar (3-Zone Contract) -->
+    <header id="site-header" class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand -->
+        <button type="button" class="brand-btn" data-nav="landing" aria-label="FixMate Home">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+              />
+            </svg>
+          </span>
+          <span class="brand-text">FixMate</span>
+        </button>
+
+        <!-- Zone 2: Single-line Nav Links -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <button type="button" class="nav-link active" data-nav="landing">Home</button>
+          <button type="button" class="nav-link" data-nav="explore">Explore Services</button>
+          <button type="button" class="nav-link" data-scroll="how-it-works">How It Works</button>
+          <button type="button" class="nav-link" data-scroll="become-pro">For Pros</button>
+          <button type="button" class="nav-link" data-scroll="why-fixmate">About Us</button>
+        </nav>
+
+        <!-- Zone 3: Actions + 1-Click ZIP Download -->
+        <div class="header-actions" id="header-actions">
+          <a
+            href="/api/download-zip"
+            download="fixmate-html-css-js.zip"
+            class="btn btn-zip"
+            id="top-zip-btn"
+            title="Download complete HTML, CSS & JS website ZIP"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Download ZIP</span>
+          </a>
+          <button type="button" class="btn-text" id="btn-open-login">Login</button>
+          <button type="button" class="btn btn-primary" id="btn-open-register">Get Started</button>
+        </div>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div class="mobile-drawer hidden" id="mobile-drawer">
+        <button type="button" class="mobile-nav-item" data-nav="landing">Home</button>
+        <button type="button" class="mobile-nav-item" data-nav="explore">Explore Services</button>
+        <button type="button" class="mobile-nav-item" data-scroll="how-it-works">How It Works</button>
+        <button type="button" class="mobile-nav-item" data-scroll="become-pro">For Pros</button>
+        <button type="button" class="mobile-nav-item" data-scroll="why-fixmate">About Us</button>
+        <div class="mobile-drawer-actions" id="mobile-drawer-actions"></div>
+      </div>
+    </header>
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-shelf" class="toast-shelf" aria-live="polite"></div>
+
+    <!-- Main Multi-View Root -->
+    <main id="app-main">
+      <!-- ==================== VIEW 1: LANDING PAGE ==================== -->
+      <section id="view-landing" class="view-section active">
+        <!-- Hero -->
+        <div class="hero-wrapper">
+          <div class="hero-mesh" aria-hidden="true"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy reveal-on-load">
+              <p class="eyebrow">Trusted Local Home Services · HTML, CSS &amp; JavaScript Edition</p>
+              <h1 class="hero-title">Your Everyday Problems. Our Trusted Professionals.</h1>
+              <p class="hero-subtitle">
+                Find skilled and verified local professionals for every home repair and maintenance need. Fast, simple and reliable.
+              </p>
+
+              <!-- Search Bar -->
+              <form id="hero-search-form" class="hero-search-bar">
+                <div class="search-locality">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <select id="hero-locality" aria-label="Select Locality">
+                    <option value="">All Localities</option>
+                    <option value="Indiranagar">Indiranagar</option>
+                    <option value="Koramangala">Koramangala</option>
+                    <option value="HSR Layout">HSR Layout</option>
+                    <option value="Whitefield">Whitefield</option>
+                    <option value="Jayanagar">Jayanagar</option>
+                  </select>
+                </div>
+                <div class="search-input-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
+                  <input
+                    type="text"
+                    id="hero-query"
+                    placeholder="What service do you need today?"
+                    aria-label="What service do you need today?"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+
+              <!-- Quick Category Filter Buttons -->
+              <div class="popular-chips" id="hero-quick-chips"></div>
+
+              <!-- Two Primary CTAs -->
+              <div class="hero-ctas">
+                <button type="button" class="btn btn-navy btn-lg" data-nav="explore">
+                  <span>Find a Professional</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </button>
+                <button type="button" class="btn btn-outline btn-lg" id="hero-become-pro">
+                  Become a Professional
+                </button>
+              </div>
+            </div>
+
+            <!-- Hero Visual Showcase -->
+            <div class="hero-media">
+              <div class="hero-image-card">
+                <img
+                  src="images/hero_home_technician.jpg"
+                  alt="FixMate specialist inspecting a smart home thermostat"
+                />
+                <div class="hero-image-scrim"></div>
+                <div class="hero-image-caption">
+                  <div>
+                    <span class="caption-kicker">Verified Local Technicians</span>
+                    <p class="caption-title">Same-Day Home &amp; HVAC Diagnostics</p>
+                  </div>
+                  <button type="button" class="btn btn-white-sm" data-open-pro="pro-1">
+                    View Sample Pro
+                  </button>
+                </div>
+              </div>
+
+              <div class="floating-card floating-card-top">
+                <span class="floating-icon blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Vikram Nair</strong>
+                  <span class="mono-sub">Electrician · 4.9 ★ · $29 base</span>
+                </div>
+              </div>
+
+              <div class="floating-card floating-card-bottom">
+                <span class="floating-icon green">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Instant Slot Check</strong>
+                  <span class="mono-sub" id="floating-verified-count">5 Verified Pros Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Statistics (Demo-labelled animated counters) -->
+        <section class="stats-band">
+          <div class="container">
+            <p class="stats-disclaimer">Platform Snapshot (Demo Showcase Figures)</p>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <p class="stat-value tabular-nums" data-counter="8" data-suffix="+">0</p>
+                <p class="stat-label">Professionals Available</p>
+                <p class="stat-sub">Active demo roster across 8 trades</p>
+              </div>
+              <div class="stat-item">
+                <p class="stat-value tabular-nums" data-counter="1420" data-suffix="+">0</p>
+                <p class="stat-label">Services Completed (Demo)</p>
+                <p class="stat-sub">Sample historical platform volume</p>
+              </div>
+              <div class="stat-item">
+                <p class="stat-value tabular-nums" data-counter="980" data-suffix="+">0</p>
+                <p class="stat-label">Happy Customers (Demo)</p>
+                <p class="stat-sub">Simulated neighborhood households</p>
+              </div>
+              <div class="stat-item">
+                <p class="stat-value accent tabular-nums" data-counter="4.8" data-decimals="1" data-suffix=" / 5">0</p>
+                <p class="stat-label">Average Customer Rating</p>
+                <p class="stat-sub">Calculated from demo reviews</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular Services Grid -->
+        <section class="section-pad container">
+          <div class="section-head">
+            <div>
+              <h2>Popular Home Services</h2>
+              <p>Browse specialists by trade with upfront indicative starting rates.</p>
+            </div>
+            <button type="button" class="link-arrow" data-nav="explore">
+              <span>Explore All Professionals</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+          <div id="landing-services-grid" class="services-grid"></div>
+        </section>
+
+        <!-- Smart Service Recommendation -->
+        <section class="smart-band">
+          <div class="container smart-grid">
+            <div class="smart-info">
+              <p class="smart-kicker">Smart Service Matcher</p>
+              <h2>Not sure which specialist to book? Describe the issue.</h2>
+              <p class="smart-desc">
+                Explain what is happening in plain language. FixMate identifies the right trade category, urgency level, and indicative pricing so you book the right pro on the first try.
+              </p>
+              <div class="smart-examples">
+                <button type="button" class="example-btn" data-example="Kitchen MCB trips when microwave starts">
+                  “Kitchen MCB trips when microwave starts”
+                </button>
+                <button type="button" class="example-btn" data-example="Split AC blowing warm air and dripping water">
+                  “Split AC blowing warm air and dripping water”
+                </button>
+                <button type="button" class="example-btn" data-example="Bathroom sink tap valve leaking steadily">
+                  “Bathroom sink tap valve leaking steadily”
+                </button>
+              </div>
+            </div>
+
+            <div class="smart-panel">
+              <form id="smart-matcher-form" class="smart-form">
+                <label for="smart-problem-input">Describe your home issue</label>
+                <div class="smart-input-row">
+                  <input
+                    type="text"
+                    id="smart-problem-input"
+                    placeholder="e.g., My washing machine stops mid-spin and leaks water..."
+                  />
+                  <button type="submit" class="btn btn-primary">Match Service</button>
+                </div>
+              </form>
+              <div id="smart-matcher-result" class="smart-result hidden"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- How FixMate Works -->
+        <section id="how-it-works" class="section-pad container">
+          <div class="section-head-stack">
+            <h2>How FixMate Works</h2>
+            <p>From discovering a nearby specialist to tracking job completion—designed to take under two minutes.</p>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <div class="step-top">
+                <span class="step-num">01</span>
+                <span class="step-icon">1</span>
+              </div>
+              <h3>Choose a Service</h3>
+              <p>Pick from electrical, plumbing, AC, carpentry, or appliance categories—or describe your issue for an instant match.</p>
+            </article>
+            <article class="step-card reveal">
+              <div class="step-top">
+                <span class="step-num">02</span>
+                <span class="step-icon">2</span>
+              </div>
+              <h3>Find Local Professionals</h3>
+              <p>Filter skilled technicians serving your exact neighborhood with real-time availability and emergency support.</p>
+            </article>
+            <article class="step-card reveal">
+              <div class="step-top">
+                <span class="step-num">03</span>
+                <span class="step-icon">3</span>
+              </div>
+              <h3>Compare Ratings and Prices</h3>
+              <p>Review transparent indicative base rates, experience years, and genuine customer feedback side by side.</p>
+            </article>
+            <article class="step-card reveal">
+              <div class="step-top">
+                <span class="step-num">04</span>
+                <span class="step-icon">4</span>
+              </div>
+              <h3>Book Your Professional</h3>
+              <p>Lock in a preferred date and time slot, attach a problem photo, and track status updates in your dashboard.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Why Choose FixMate -->
+        <section id="why-fixmate" class="why-band">
+          <div class="container why-grid">
+            <div class="why-lead">
+              <h2>Why households rely on FixMate</h2>
+              <p>
+                Built to eliminate guesswork, hidden call-out fees, and unverified referrals when something breaks at home.
+              </p>
+              <button type="button" class="btn btn-navy" data-nav="explore">
+                <span>Browse Verified Pros</span>
+              </button>
+            </div>
+            <div class="why-cards">
+              <div class="why-card reveal">
+                <h3>Verified Professional Profiles</h3>
+                <p>Admin-reviewed identity and trade credentials—verified badges are granted strictly after document approval.</p>
+              </div>
+              <div class="why-card reveal">
+                <h3>Transparent Pricing</h3>
+                <p>Inspect upfront diagnostic and base service rates before confirming any appointment.</p>
+              </div>
+              <div class="why-card reveal">
+                <h3>Genuine Customer Reviews</h3>
+                <p>Verified reviews can only be submitted by customers after a booked job reaches Completed status.</p>
+              </div>
+              <div class="why-card reveal">
+                <h3>Local Service Discovery</h3>
+                <p>Search directly by your locality to connect with specialists already operating near your street.</p>
+              </div>
+              <div class="why-card reveal">
+                <h3>Easy Slot Booking</h3>
+                <p>Prevent double-booking with real-time slot validation and clear tracking from Pending to Completed.</p>
+              </div>
+              <div class="why-card reveal">
+                <h3>Customer Support</h3>
+                <p>Clear escalation channels, cancellation options for eligible bookings, and active moderation.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section-pad container">
+          <div class="section-head">
+            <div>
+              <h2>Neighborhood Reviews</h2>
+              <p>Sample customer testimonials demonstrating completed booking feedback.</p>
+            </div>
+            <span class="muted-label">Sample Demo Feedback</span>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card reveal">
+              <div class="testimonial-meta">
+                <span>AC Repair · Sample Demo Review</span>
+                <span class="rating-amber">5.0 ★</span>
+              </div>
+              <p class="testimonial-quote">
+                “Our split AC stopped cooling on a humid afternoon. We compared two nearby HVAC technicians on FixMate, booked Rohan for the 10 AM slot, and cooling was restored in 75 minutes.”
+              </p>
+              <div class="testimonial-author">
+                <strong>Meera Iyer</strong>
+                <span>Homeowner · Indiranagar</span>
+              </div>
+            </article>
+            <article class="testimonial-card reveal">
+              <div class="testimonial-meta">
+                <span>Electrician · Sample Demo Review</span>
+                <span class="rating-amber">5.0 ★</span>
+              </div>
+              <p class="testimonial-quote">
+                “Instead of calling five unverified numbers, I checked Sarah’s earthing audit rate card and booked online. Every circuit in our panel is now cleanly labeled.”
+              </p>
+              <div class="testimonial-author">
+                <strong>Siddharth Verma</strong>
+                <span>Apartment Resident · Whitefield</span>
+              </div>
+            </article>
+            <article class="testimonial-card reveal">
+              <div class="testimonial-meta">
+                <span>Plumber · Sample Demo Review</span>
+                <span class="rating-amber">5.0 ★</span>
+              </div>
+              <p class="testimonial-quote">
+                “Transparent base pricing made the biggest difference. Elena arrived with brass spare valves, fixed our bathroom leak cleanly, and the final bill matched the estimate.”
+              </p>
+              <div class="testimonial-author">
+                <strong>Ananya Sen</strong>
+                <span>Tenant · Koramangala</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Become a Professional CTA -->
+        <section id="become-pro" class="container cta-section">
+          <div class="pro-cta-banner">
+            <div class="pro-cta-copy">
+              <p class="smart-kicker">For Independent Technicians &amp; Tradespeople</p>
+              <h2>Are you a skilled professional? Grow your business with FixMate.</h2>
+              <p>
+                Publish your service rate card, control your working hours, toggle emergency availability, and receive direct local bookings.
+              </p>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg" id="cta-join-pro">
+              Join as Professional
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <!-- ==================== VIEW 2: EXPLORE SERVICES ==================== -->
+      <section id="view-explore" class="view-section container page-pad">
+        <div class="explore-head">
+          <div>
+            <h1>Explore Local Professionals</h1>
+            <p>Filter by trade, locality, price range, rating, and emergency availability.</p>
+          </div>
+          <p class="mono-count" id="explore-count">Showing 0 professionals</p>
+        </div>
+
+        <div class="filter-box">
+          <div class="filter-top-row">
+            <input
+              type="text"
+              id="filter-query"
+              placeholder="Search by pro name, trade, or skill..."
+              aria-label="Search professionals"
+            />
+            <input
+              type="text"
+              id="filter-locality"
+              list="locality-suggestions"
+              placeholder="Filter by city or locality (e.g. Indiranagar)"
+              aria-label="Filter by locality"
+            />
+            <datalist id="locality-suggestions">
+              <option value="Indiranagar"></option>
+              <option value="Koramangala"></option>
+              <option value="HSR Layout"></option>
+              <option value="Whitefield"></option>
+              <option value="Jayanagar"></option>
+            </datalist>
+            <select id="filter-sort" aria-label="Sort professionals">
+              <option value="rating">Sort: Highest Rating</option>
+              <option value="price-asc">Sort: Lowest Price</option>
+              <option value="nearest">Sort: Nearest Location</option>
+            </select>
+          </div>
+
+          <div class="category-tabs" id="explore-category-tabs"></div>
+
+          <div class="filter-bottom-row">
+            <div class="filter-controls-group">
+              <label class="range-label">
+                Max Starting Rate: <strong id="filter-price-val" class="tabular-nums">$150</strong>
+                <input type="range" id="filter-max-price" min="20" max="150" step="5" value="150" />
+              </label>
+
+              <div class="rating-filter" id="filter-rating-group">
+                <span>Min Rating:</span>
+                <button type="button" class="seg-btn active" data-min-rating="0">Any</button>
+                <button type="button" class="seg-btn" data-min-rating="4.5">4.5+ ★</button>
+                <button type="button" class="seg-btn" data-min-rating="4.8">4.8+ ★</button>
+              </div>
+
+              <label class="check-label">
+                <input type="checkbox" id="filter-available" />
+                <span>Available Now</span>
+              </label>
+
+              <label class="check-label emergency">
+                <input type="checkbox" id="filter-emergency" />
+                <span>Emergency Available</span>
+              </label>
+            </div>
+
+            <button type="button" class="btn-reset" id="btn-reset-filters">Reset Filters</button>
+          </div>
+        </div>
+
+        <div id="explore-grid" class="pros-grid"></div>
+        <div id="explore-empty" class="empty-state hidden">
+          <h3>No matching professionals found</h3>
+          <p>Try widening your locality, increasing your max starting rate, or clearing filters.</p>
+          <button type="button" class="btn btn-primary" id="btn-empty-reset">Clear All Filters</button>
+        </div>
+
+        <!-- Floating Compare Bar -->
+        <div id="compare-tray" class="compare-tray hidden">
+          <span>Comparing <strong id="compare-count">0/3</strong> professionals</span>
+          <button type="button" class="btn btn-primary btn-sm" id="btn-open-compare">
+            Compare Side-by-Side
+          </button>
+        </div>
+      </section>
+
+      <!-- ==================== VIEW 3: PROFESSIONAL PROFILE ==================== -->
+      <section id="view-profile" class="view-section container page-pad">
+        <button type="button" class="back-link" data-nav="explore">← Back to Explore Services</button>
+        <div id="pro-profile-content"></div>
+      </section>
+
+      <!-- ==================== VIEW 4: CUSTOMER DASHBOARD ==================== -->
+      <section id="view-customer" class="view-section container page-pad">
+        <div id="customer-dashboard-content"></div>
+      </section>
+
+      <!-- ==================== VIEW 5: PROFESSIONAL DASHBOARD ==================== -->
+      <section id="view-pro" class="view-section container page-pad">
+        <div id="pro-dashboard-content"></div>
+      </section>
+
+      <!-- ==================== VIEW 6: ADMIN DASHBOARD ==================== -->
+      <section id="view-admin" class="view-section container page-pad">
+        <div id="admin-dashboard-content"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="brand-btn footer-logo">
+            <span class="brand-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                />
+              </svg>
+            </span>
+            <span class="brand-text white">FixMate</span>
+          </div>
+          <p>
+            FixMate – The Right Professional. Right When You Need Them. Built purely with HTML5, CSS3, and Vanilla JavaScript.
+          </p>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><button type="button" data-explore-cat="electrician">Electricians</button></li>
+            <li><button type="button" data-explore-cat="plumber">Plumbers</button></li>
+            <li><button type="button" data-explore-cat="ac-repair">AC Repair Technicians</button></li>
+            <li><button type="button" data-explore-cat="carpenter">Carpenters</button></li>
+            <li><button type="button" data-explore-cat="cleaning">House Cleaning</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company &amp; Support</h4>
+          <ul class="footer-links">
+            <li><button type="button" data-scroll="why-fixmate">About FixMate</button></li>
+            <li><button type="button" id="footer-become-pro">Become a Professional</button></li>
+            <li><button type="button" data-policy="support">Customer Support</button></li>
+            <li><button type="button" data-policy="privacy">Privacy Policy</button></li>
+            <li><button type="button" data-policy="terms">Terms and Conditions</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact &amp; Download</h4>
+          <p class="footer-contact">100 Feet Road, Indiranagar, Bengaluru</p>
+          <p class="footer-contact">support@fixmate.demo</p>
+          <p class="footer-contact tabular-nums">+91 80 4120 8800</p>
+          <a
+            href="/api/download-zip"
+            download="fixmate-html-css-js.zip"
+            class="btn btn-zip footer-zip"
+          >
+            <span>Download Complete ZIP</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 FixMate Technologies · Pure HTML, CSS &amp; JavaScript Edition</p>
+        <p>Demo mode with localStorage persistence · No external frameworks</p>
+      </div>
+    </footer>
+
+    <!-- Generic Reusable Modal Backdrop -->
+    <div id="modal-backdrop" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+      <div class="modal-box" id="modal-box">
+        <div class="modal-head">
+          <h3 id="modal-title">Modal</h3>
+          <button type="button" class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+        </div>
+        <div id="modal-body" class="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
